@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="245.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.application.inte2512gfp.controller.ArticleSummaryController">
+    <children>
+        <VBox fx:id="summaryVbox" layoutY="-1.0" onMouseClicked="#viewNewsOnMouseClicked" prefHeight="245.0"
+              prefWidth="200.0" styleClass="summary-background" stylesheets="@styles/styles.css">
+            <children>
+                <ImageView fx:id="imageSummaryArticle" fitHeight="140.0" fitWidth="200.0" pickOnBounds="true"/>
+                <Label fx:id="titleSummaryArticle" alignment="TOP_LEFT" contentDisplay="RIGHT" prefHeight="85.0"
+                       prefWidth="200.0" wrapText="true">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <ImageView fx:id="imagePublisherArticle" fitHeight="38.0" fitWidth="68.0" pickOnBounds="true"
+                                   preserveRatio="true"/>
+                        <Label fx:id="dateDisplayText" text="Label">
+                            <font>
+                                <Font name="Times New Roman Italic" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

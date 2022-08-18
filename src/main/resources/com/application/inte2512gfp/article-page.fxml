@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane prefHeight="700.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.inte2512gfp.controller.ArticlePageController">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" spacing="30.0" styleClass="color-background" stylesheets="@styles/styles.css">
+                    <padding>
+                        <Insets left="30.0" right="30.0" />
+                    </padding>
+                    <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/logo_a.png" />
+                            </image>
+                        </ImageView>
+                        <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="0.0">
+                        </HBox>
+                        <Pane prefHeight="200.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="backToMainButton" mnemonicParsing="false" onAction="#backToMainHandler" style="-fx-base: #f18e8e; -fx-pref-width: 120; -fx-font-size: 14;" text="Back to Main" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="200.0">
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <WebView fx:id="webView" prefHeight="593.0" prefWidth="1000.0" />
+    </center>
+</BorderPane>

@@ -1,0 +1,5 @@
+/*https://stackoverflow.com/questions/13955667/disabled-href-tag*/
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}

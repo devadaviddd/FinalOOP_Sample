@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.inte2512gfp.controller.MainController">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" spacing="30.0" styleClass="color-background" stylesheets="@styles/styles.css">
+                    <padding>
+                        <Insets left="30.0" right="30.0" />
+                    </padding>
+                    <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/logo_a.png" />
+                            </image>
+                        </ImageView>
+                        <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="409.0">
+                        </HBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#reloadOnMouseClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                            <image>
+                                <Image url="@images/icons8_refresh_64px_2.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="200.0">
+                    <children>
+                        <ScrollPane fx:id="cateScrollPane" onScroll="#categoriesOnScrollH" prefHeight="200.0" prefWidth="900.0">
+                            <content>
+                                <HBox fx:id="categoriesHBox" prefHeight="30.0" prefWidth="1200.0">
+                                </HBox>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <StackPane fx:id="stackPane" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane>
+                    <children>
+                        <Pagination fx:id="mainPagingBar" layoutX="14.0" maxPageIndicatorCount="5" pageCount="5" prefHeight="480.0" prefWidth="680.0" styleClass="paging-button" stylesheets="@styles/styles.css" HBox.hgrow="ALWAYS" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>
